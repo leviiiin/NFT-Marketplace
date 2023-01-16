@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/libs/normalize.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>NFT Marketplace</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <img src="./static/icon/Logo.svg" alt="icon" class="logo">
+                <div class="menu">
+                    <a href="#" class="menu__link">Explorer</a>
+                    <a href="#" class="menu__link">Collections</a>
+                    <a href="#" class="menu__link">Creators</a>
+                    <a href="#" class="menu__link">Blog</a>
+                </div>
+                <button class="turquoise--btn header__btn h4">Connect Wallet</button>
+                <i class="bi bi-list burger"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__left">
+                        <p class="hero-title">NFT Marketplace</p>
+                        <h1 class="hero-description">Collect rare digital artworks</h1>
+                        <div class="hero__item">
+                            <button class="turquoise--btn hero__btn">Explore</button>
+                            <div class="creators">
+                                <img src="./static/icon/hero-creators.svg" alt="icon" class="hero__creators">
+                                <img src="./static/icon/hero-sketch.svg" alt="icon" class="hero__sketch">   
+                            </div>
+                        </div>
+                        <div class="funfuct">
+                            <div class="group">
+                                <h2 class="group-title">50k</h2>
+                                <h4 class="group-description">Artwork</h4>
+                            </div>
+                            <div class="group">
+                                <h2 class="group-title">35k</h2>
+                                <h4 class="group-description">Auction</h4>
+                            </div>
+                            <div class="group">
+                                <h2 class="group-title">23k+</h2>
+                                <h4 class="group-description">Artist</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__right">
+                        <img src="./static/img/hero-img.png" alt="img" class="hero__img">
+                        <div class="hero__img-bg"></div>
+                        <!-- <div class="ellipse">
+                            <img src="./static/icon/hero-elllipse-icon.svg" alt="icon">
+                            <p class="ellipse-text">nft marketplace qeeb</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Categories -->
+        <section class="categories">
+            <div class="container">
+                <div class="categories__content">
+                    <h2 class="categories-title">popular categories</h2>
+                    <div class="categories__slider">
+                        <div class="slider__item">
+                            <img src="/static/img/categories__img-one.png" alt="" class="slider__img">
+                            <h3 class="slider__item-title">Games</h3>
+                        </div>
+                        <div class="slider__item">
+                            <img src="/static/img/categories__img-two.png" alt="" class="slider__img">
+                            <h3 class="slider__item-title">Sports</h3>
+                        </div>
+                        <div class="slider__item">
+                            <img src="/static/img/categories__img-three.png" alt="" class="slider__img">
+                            <h3 class="slider__item-title">Metaverse</h3>
+                        </div>
+                        <div class="slider__item">
+                            <img src="/static/img/categories__img-four.png" alt="" class="slider__img">
+                            <h3 class="slider__item-title">Art</h3>
+                        </div>
+                        <div class="slider__item">
+                            <img src="/static/img/categories__img-five.png" alt="" class="slider__img">
+                            <h3 class="slider__item-title">Music</h3>
+                        </div>
+                        <div class="slider__item">
+                            <img src="/static/img/categories__img-six.png" alt="" class="slider__img">
+                            <h3 class="slider__item-title">Photography</h3>
+                        </div>
+                        <div class="slider__item">
+                            <img src="./static/img/categories__img-one.png" alt="" class="slider__img">
+                            <h3 class="slider__item-title">Games</h3>
+                        </div>
+                        <div class="slider__item">
+                            <img src="./static/img/categories__img-two.png" alt="" class="slider__img">
+                            <h3 class="slider__item-title">Sports</h3>
+                        </div>
+                    </div>
+                    <div class="slider__btn slider__btn-left">
+                        <i class="bi bi-arrow-left slider__btn-arrow back"></i>
+                    </div>
+                    <div class="slider__btn slider__btn-right">
+                        <i class="bi bi-arrow-right slider__btn-arrow next"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Collections -->
+        <section class="collections">
+            <div class="container">
+                <div class="collections__content">
+                    <div class="collections__top">
+                        <h2 class="collections-title">top collections</h2>
+                        <div class="collections__checkbox">
+                            <p class="h4 checkbox__btn active">7 Days</p>
+                            <p class="h4 checkbox__btn">30 Days</p>
+                        </div>
+                    </div>
+                    <div class="collections__list">
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-one.png" alt="img" class="item__img">
+                            <div class="collections__item-info">
+                                <div class="item__titles">
+                                    <h3 class="item__titles-title">NFT Worlds</h3>
+                                    <h4 class="item__titles-price color--lightblue">Floor:0.80ETH</h4>
+                                </div>
+                                <div class="item__price">
+                                    <p class="h4 item__price-title">5.8k ETH</p>
+                                    <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                    <p class="h4 item__price-title
+                                    color--turquoise">+294.7%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-two.png" alt="img" class="item__img">
+                            <div class="collections__item-info">
+                                <div class="item__titles">
+                                    <h3 class="item__titles-title">Etherpilots</h3>
+                                    <h4 class="item__titles-price color--lightblue">Floor:0.05ETH</h4>
+                                </div>
+                                <div class="item__price">
+                                    <p class="h4 item__price-title">5.8k ETH</p>
+                                    <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                    <p class="h4 item__price-title
+                                    color--turquoise">+294.7%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-six.png" alt="img" class="item__img">
+                            <div class="collections__item-info">
+                                <div class="item__titles">
+                                    <h3 class="item__titles-title">Mineblowings</h3>
+                                    <h4 class="item__titles-price color--lightblue">Floor: 0.07ETH</h4>
+                                </div>
+                                <div class="item__price">
+                                    <p class="h4 item__price-title">5.8k ETH</p>
+                                    <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                    <p class="h4 item__price-title
+                                    color--turquoise">+294.7%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-four.png" alt="img" class="item__img">
+                            <div class="item__titles">
+                                <h3 class="item__titles-title">Super Worlds</h3>
+                                <h4 class="item__titles-price color--lightblue">Floor:0.70ETH</h4>
+                            </div>
+                            <div class="item__price">
+                                <p class="h4 item__price-title">5.8k ETH</p>
+                                <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                <p class="h4 item__price-title
+                                color--turquoise">+294.7%</p>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-three.png" alt="img" class="item__img">
+                            <div class="item__titles">
+                                <h3 class="item__titles-title">Kive Core</h3>
+                                <h4 class="item__titles-price color--lightblue">Floor:0.06ETH</h4>
+                            </div>
+                            <div class="item__price">
+                                <p class="h4 item__price-title">5.8k ETH</p>
+                                <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                <p class="h4 item__price-title
+                                color--turquoise">+294.7%</p>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-five.png" alt="img" class="item__img">
+                            <div class="item__titles">
+                                <h3 class="item__titles-title">NFT Flow</h3>
+                                <h4 class="item__titles-price color--lightblue">Floor:0.50ETH</h4>
+                            </div>
+                            <div class="item__price">
+                                <p class="h4 item__price-title">5.8k ETH</p>
+                                <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                <p class="h4 item__price-title
+                                color--turquoise">+294.7%</p>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-two.png" alt="img" class="item__img">
+                            <div class="item__titles">
+                                <h3 class="item__titles-title">Bidether</h3>
+                                <h4 class="item__titles-price color--lightblue">Floor:0.10ETH</h4>
+                            </div>
+                            <div class="item__price">
+                                <p class="h4 item__price-title">5.8k ETH</p>
+                                <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                <p class="h4 item__price-title
+                                color--turquoise">+294.7%</p>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-four.png" alt="img" class="item__img">
+                            <div class="item__titles">
+                                <h3 class="item__titles-title">Varipack</h3>
+                                <h4 class="item__titles-price color--lightblue">Floor:0.90ETH</h4>
+                            </div>
+                            <div class="item__price">
+                                <p class="h4 item__price-title">5.8k ETH</p>
+                                <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                <p class="h4 item__price-title
+                                color--turquoise">+294.7%</p>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-three.png" alt="img" class="item__img">
+                            <div class="item__titles">
+                                <h3 class="item__titles-title">Nether</h3>
+                                <h4 class="item__titles-price color--lightblue">Floor:0.08ETH</h4>
+                            </div>
+                            <div class="item__price">
+                                <p class="h4 item__price-title">5.8k ETH</p>
+                                <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                <p class="h4 item__price-title
+                                color--turquoise">+294.7%</p>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-five.png" alt="img" class="item__img">
+                            <div class="item__titles">
+                                <h3 class="item__titles-title">Moonther</h3>
+                                <h4 class="item__titles-price color--lightblue">Floor:0.10ETH</h4>
+                            </div>
+                            <div class="item__price">
+                                <p class="h4 item__price-title">5.8k ETH</p>
+                                <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                <p class="h4 item__price-title
+                                color--turquoise">+294.7%</p>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-six.png" alt="img" class="item__img">
+                            <div class="item__titles">
+                                <h3 class="item__titles-title">Proof Corn</h3>
+                                <h4 class="item__titles-price color--lightblue">Floor: 0.90ETH</h4>
+                            </div>
+                            <div class="item__price">
+                                <p class="h4 item__price-title">5.8k ETH</p>
+                                <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                <p class="h4 item__price-title
+                                color--turquoise">+294.7%</p>
+                            </div>
+                        </div>
+                        <div class="collections__item">
+                            <img src="./static/img/collection__img-one.png" alt="img" class="item__img">
+                            <div class="item__titles">
+                                <h3 class="item__titles-title">Parallel</h3>
+                                <h4 class="item__titles-price color--lightblue">Floor:0.08ETH</h4>
+                            </div>
+                            <div class="item__price">
+                                <p class="h4 item__price-title">5.8k ETH</p>
+                                <p class="h4 item__price-title color--lightblue">$8.4M</p>
+                                <p class="h4 item__price-title
+                                color--turquoise">+294.7%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="collections__btn turquoise--btn">See All Collection</button>
+                </div>
+            </div>
+        </section>
+        <!-- Tranding -->
+        <section class="tranding">
+            <div class="container">
+                <div class="tranding__content">
+                    <h2 class="tranding-title">Tranding nfts</h2>
+                    <div class="tranding__slider">
+                        <div class="tranding__slider-item">
+                            <img src="./static/img/tranding-one.png" alt="img" class="tranding__slider-img">
+                            <h3 class="tranding__slider-title">Rare Crypto</h3>
+                            <p class="h4 tranding__slider-descriprion">#QA5200 The Kive</p>
+                            <div class="tranding__slider-price">
+                                <div class="price__item">
+                                    <p class="h4 price-title color--grey">Price</p>
+                                    <p class="h5 price-description">0.07 ETH</p>
+                                </div>
+                                <div class="price__item">
+                                    <p class="h4 price-title color--grey">Highest Bid</p>
+                                    <p class="h5 price-description">0.03 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tranding__slider-item">
+                            <img src="./static/img/tranding-two.png" alt="img" class="tranding__slider-img">
+                            <h3 class="tranding__slider-title">Kive Boy</h3>
+                            <p class="h4 tranding__slider-descriprion">#QA5200 The Kive</p>
+                            <div class="tranding__slider-price">
+                                <div class="price__item">
+                                    <p class="h4 price-title color--grey">Price</p>
+                                    <p class="h5 price-description">0.07 ETH</p>
+                                </div>
+                                <div class="price__item">
+                                    <p class="h4 price-title color--grey">Highest Bid</p>
+                                    <p class="h5 price-description">0.03 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tranding__slider-item">
+                            <img src="./static/img/tranding-three.png" alt="img" class="tranding__slider-img">
+                            <h3 class="tranding__slider-title">Rare Crypto</h3>
+                            <p class="h4 tranding__slider-descriprion">#QA5200 The Kive</p>
+                            <div class="tranding__slider-price">
+                                <div class="price__item">
+                                    <p class="h4 price-title color--grey">Price</p>
+                                    <p class="h5 price-description">0.07 ETH</p>
+                                </div>
+                                <div class="price__item">
+                                    <p class="h4 price-title color--grey">Highest Bid</p>
+                                    <p class="h5 price-description">0.03 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tranding__slider-item">
+                            <img src="./static/img/tranding-four.png" alt="img" class="tranding__slider-img">
+                            <h3 class="tranding__slider-title">kive Boy</h3>
+                            <p class="h4 tranding__slider-descriprion">#QA5200 The Kive</p>
+                            <div class="tranding__slider-price">
+                                <div class="price__item">
+                                    <p class="h4 price-title color--grey">Price</p>
+                                    <p class="h5 price-description">0.07 ETH</p>
+                                </div>
+                                <div class="price__item">
+                                    <p class="h4 price-title color--grey">Highest Bid</p>
+                                    <p class="h5 price-description">0.03 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__btn slider__btn-left">
+                            <i class="bi bi-arrow-left slider__btn-arrow back"></i>
+                        </div>
+                        <div class="slider__btn slider__btn-right">
+                            <i class="bi bi-arrow-right slider__btn-arrow next"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Insights -->
+        <section class="insights">
+            <div class="container">
+                <div class="insights__content">
+                    <h2 class="insights-title">insights</h2>
+                    <div class="insights__list">
+                        <div class="insights__item">
+                            <img src="./static/img/insights__img-one.png" alt="img" class="insights__img">
+                            <div class="insights__date-item">
+                                <p class="insights-theme">technology</p>
+                                <p class="h4 insights-date">John Doe • 19 Jan 2022</p>
+                            </div>
+                            <p class="insights__item-title">Gesture for the people and the culture</p>
+                            <div class="insights__item-button">
+                                <p class="h4 button-title">Read More</p>
+                                <i class="bi bi-arrow-up-right button-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="insights__item">
+                            <img src="./static/img/insights__img-two.png" alt="img" class="insights__img">
+                            <div class="insights__date-item">
+                                <p class="insights-theme">Webiner</p>
+                                <p class="h4 insights-date">John Doe • 19 Jan 2022</p>
+                            </div>
+                            <p class="insights__item-title">Mostly metaverse is only as good as its tools and it is totally true.</p>
+                            <div class="insights__item-button">
+                                <p class="h4 button-title">Read More</p>
+                                <i class="bi bi-arrow-up-right button-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="insights__item">
+                            <img src="./static/img/insights__img-three.png" alt="img" class="insights__img">
+                            <div class="insights__date-item">
+                                <p class="insights-theme">Crypto Currency</p>
+                                <p class="h4 insights-date">John Doe • 19 Jan 2022</p>
+                            </div>
+                            <p class="insights__item-title">Crypto business is only as good as its tools and it is totally true.</p>
+                            <div class="insights__item-button">
+                                <p class="h4 button-title">Read More</p>
+                                <i class="bi bi-arrow-up-right button-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- App -->
+        <section class="app">
+            <div class="container">
+                <div class="app__content">
+                    <h2 class="app-title">Download Qeeb app to track your NFT portfolio and discover more</h2>
+                    <div class="app__btn">
+                        <button class="app__btn-dark dark--btn">
+                            <i class="bi bi-apple"></i>
+                            App Store
+                        </button>
+                        <button class="app__btn-turquoise turquoise--btn">
+                            <i class="bi bi-android2"></i>
+                            Google Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <img src="./static/icon/Logo.svg" alt="logo" class="footer__logo">
+                <div class="footer__group">
+                    <div class="footer__group__item">
+                        <p class="footer__group-title">Quick Links</p>
+                        <ul class="footer__group__list">
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">About us</a>
+                            </li>
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">Services</a>
+                            </li>
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">API</a>
+                            </li>
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">Become a Partner</a>
+                            </li>
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">Branding</a>
+                            </li>
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">Career</a>
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="footer__group__item">
+                        <p class="footer__group-title">Marketplace</p>
+                        <ul class="footer__group__list">
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">Explore</a>
+                            </li>
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">How it works</a>
+                            </li>
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">Insights</a>
+                            </li>
+                            <li class="footer__group__li">
+                                <a href="" class="footer__group__link">Help Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="email__form">
+                    <p class="email__form-title">Sign Up to Receive Updates Services</p>
+                    <form class="form">
+                        <input type="email" class="input__email" placeholder="youremail@gmail.com">
+                        <button class="form-btn">
+                            <i class="bi bi-send form-btn-i"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer-copyright">Qeeb 2022. All Rights Reserved</p>
+                <p class="footer-privacy">Terms & Conditions Privacy</p>
+                <div class="messenger">
+                    <i class="bi bi-twitter twitter"></i>
+                    <i class="bi bi-facebook facebook"></i>
+                    <i class="bi bi-instagram instagram"></i>
+                    <i class="bi bi-linkedin linkedin"></i>
+                    <i class="bi bi-github github"></i>
+                    <i class="bi bi-youtube youtube"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>
