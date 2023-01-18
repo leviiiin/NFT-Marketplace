@@ -407,14 +407,6 @@ body::-webkit-scrollbar-button:vertical:end:increment {
     margin-top: 100px;
 }
 
-.categories__content {
-    position: relative;
-    width: 100%;
-    max-width: 1690px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .categories-title {
     margin: 0;
     text-transform: uppercase;
@@ -427,6 +419,7 @@ body::-webkit-scrollbar-button:vertical:end:increment {
     overflow-x: auto;
     gap: 30px;
     padding-left: 15px;
+    position: relative;
 }
 
 .categories__slider::-webkit-scrollbar,
@@ -448,6 +441,7 @@ body::-webkit-scrollbar-button:vertical:end:increment {
 
 .slider__img {
     margin: 0;
+    width: 220px;
 }
 
 .slider__item-title {
@@ -494,6 +488,7 @@ body::-webkit-scrollbar-button:vertical:end:increment {
 .categories__content .slider__btn-right {
     right: -35px;
 } */
+
 
 /* Collections */
 .collections {
