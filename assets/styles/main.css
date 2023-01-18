@@ -709,7 +709,7 @@ body::-webkit-scrollbar-button:vertical:end:increment {
     padding: 0;
     margin-top: 70px;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     gap: 30px;
     position: relative;
 }
@@ -741,7 +741,7 @@ body::-webkit-scrollbar-button:vertical:end:increment {
     }
 
     .tranding__slider-item{
-        justify-content: center;
+        padding-left: 15px;
     }
 }
 
@@ -990,6 +990,7 @@ body::-webkit-scrollbar-button:vertical:end:increment {
     .app__content {
         padding: 80px 0;
         background: none;
+        border: none;
     }
 
     .app {
