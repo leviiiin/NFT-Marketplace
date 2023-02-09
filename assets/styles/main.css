@@ -4,6 +4,79 @@
 @import url('https://fonts.cdnfonts.com/css/monument-extended');
 /* font-family: 'Monument Extended', sans-serif; */
 
+/* All style */
+body {
+    font-family: 'Red Rose', cursive;
+    color: #FFFFFF;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.04em;
+    background: #101010;
+}
+
+h1,
+.h1 {
+    font-size: 72px;
+    line-height: calc(86 / 72);
+}
+
+h2,
+.h2 {
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(36 / 30);
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+    line-height: calc(30 / 24);
+}
+
+h4,
+.h4 {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+}
+
+h5,
+.h5 {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+}
+
+/* Body scrollbar */
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #2C2D31;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #3FC9B0;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #52FFE0;
+}
+
+body::-webkit-scrollbar-button:vertical:start:decrement {
+    background:
+            linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #52FFE0;
+}
+
+body::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+            linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #52FFE0;
+}
+
+
 /* Colors */
 .color--turquoise {
     color: #52FFE0;
@@ -71,79 +144,6 @@
 .btn-dark:hover {
     background-color: white;
 }
-
-/* All style */
-body {
-    font-family: 'Red Rose', cursive;
-    background: #101010;
-    color: #FFFFFF;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-}
-
-h1,
-.h1 {
-    font-size: 72px;
-    line-height: calc(86 / 72);
-}
-
-h2,
-.h2 {
-    font-family: 'Monument Extended', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: calc(36 / 30);
-}
-
-h3,
-.h3 {
-    font-size: 24px;
-    line-height: calc(30 / 24);
-}
-
-h4,
-.h4 {
-    font-size: 16px;
-    line-height: calc(20 / 16);
-}
-
-h5,
-.h5 {
-    font-size: 14px;
-    line-height: calc(18 / 14);
-}
-
-/* Body scrollbar */
-body::-webkit-scrollbar {
-    width: 5px;
-    background-color: #2C2D31;
-}
-
-body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #3FC9B0;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background-color: #52FFE0;
-}
-
-body::-webkit-scrollbar-button:vertical:start:decrement {
-    background:
-        linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: #52FFE0;
-}
-
-body::-webkit-scrollbar-button:vertical:end:increment {
-    background:
-        linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: #52FFE0;
-}
-
 
 /* Header */
 .header {
@@ -311,6 +311,20 @@ body::-webkit-scrollbar-button:vertical:end:increment {
     z-index: -1;
 }
 
+/*
+mobile 320 - 767
+@media screen and (max-width: 767px)
+
+tablet 768 - 991
+@media screen and (max-width: 991px)
+
+desktop 992 - max
+1280
+1440
+1600
+1920
+*/
+
 @media screen and (max-width: 1520px) {
 
     .hero-title {
@@ -364,7 +378,7 @@ body::-webkit-scrollbar-button:vertical:end:increment {
     }
 }
 
-@media screen and (max-width: 951px) {
+@media screen and (max-width: 991px) {
 
     .hero-title {
         font-size: 18px;
@@ -399,15 +413,9 @@ body::-webkit-scrollbar-button:vertical:end:increment {
     }
 
     .hero__content {
+        justify-content: center;
         margin: 0;
         padding: 0;
-    }
-}
-
-@media screen and (max-width: 848px) {
-
-    .hero__content {
-        justify-content: center;
     }
 }
 
@@ -537,22 +545,17 @@ body::-webkit-scrollbar-button:vertical:end:increment {
 }
 
 .collections__item {
-    margin: 0;
-    background: #2C2D31;
-    border-radius: 30px;
-    padding: 10px;
-    padding-right: 40px;
     display: flex;
     align-items: center;
-}
-
-.item__img {
-    padding-right: 24px;
+    gap: 24px;
+    border-radius: 30px;
+    padding: 10px 40px 10px 10px;
+    margin: 0;
+    background: #2C2D31;
 }
 
 .item__titles {
     margin: 0;
-    padding-right: 130px;
 }
 
 .item__titles-title {
@@ -566,7 +569,12 @@ body::-webkit-scrollbar-button:vertical:end:increment {
     padding-top: 4px;
 }
 
-.item__price,
+.item__price {
+    flex: none;
+    width: 120px;
+    margin-left: auto;
+}
+
 .item__price-title {
     margin: 0;
     padding: 0;
@@ -815,7 +823,7 @@ body::-webkit-scrollbar-button:vertical:end:increment {
 }
 
 .insights__item-button:hover {
-    border: #1D1E22;
+    border-color: #52FFE0;
     background: #52FFE0;
 }
 
