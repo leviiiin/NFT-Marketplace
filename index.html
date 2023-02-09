@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container">
             <div class="header__content">
-                <img src="./static/icon/Logo.svg" alt="icon" class="logo">
+                <img src="/static/icon/Logo.svg" alt="icon" class="logo">
                 <div class="menu">
                     <a href="#" class="menu__link">Explorer</a>
                     <a href="#" class="menu__link">Collections</a>
@@ -26,9 +26,10 @@
                     <a href="#" class="menu__link">Blog</a>
                 </div>
                 <button class="btn btn-turquoise header__btn h4">Connect Wallet</button>
-                <i class="bi bi-list burger"></i>
+                <button class="burger js-mmenu-btn">
+                    <i class="bi bi-list"></i>
+                </button>
             </div>
-
         </div>
     </header>
 
@@ -43,8 +44,8 @@
                         <div class="hero__item">
                             <button class="btn btn-turquoise hero__btn">Explore</button>
                             <div class="creators">
-                                <img src="./static/icon/hero-creators.svg" alt="icon" class="hero__creators">
-                                <img src="./static/icon/hero-sketch.svg" alt="icon" class="hero__sketch">
+                                <img src="/static/icon/hero-creators.svg" alt="icon" class="hero__creators">
+                                <img src="/static/icon/hero-sketch.svg" alt="icon" class="hero__sketch">
                             </div>
                         </div>
                         <div class="funfuct">
@@ -63,7 +64,7 @@
                         </div>
                     </div>
                     <div class="hero__right">
-                        <img src="./static/img/hero-img.png" alt="img" class="hero__img">
+                        <img src="/static/img/hero-img.png" alt="img" class="hero__img">
                         <div class="hero__img-bg"></div>
                     </div>
                 </div>
@@ -78,55 +79,55 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="slider__card">
-                                    <img src="./static/img/categories__img-one.png" alt="" class="slider__img">
+                                    <img src="/static/img/categories__img-one.png" alt="" class="slider__img">
                                     <h3 class="slider__card-title">Games</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider__card">
-                                    <img src="./static/img/categories__img-two.png" alt="" class="slider__img">
+                                    <img src="/static/img/categories__img-two.png" alt="" class="slider__img">
                                     <h3 class="slider__card-title">Sports</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider__card">
-                                    <img src="./static/img/categories__img-three.png" alt="" class="slider__img">
+                                    <img src="/static/img/categories__img-three.png" alt="" class="slider__img">
                                     <h3 class="slider__card-title">Metaverse</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider__card">
-                                    <img src="./static/img/categories__img-one.png" alt="" class="slider__img">
+                                    <img src="/static/img/categories__img-one.png" alt="" class="slider__img">
                                     <h3 class="slider__card-title">Games</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider__card">
-                                    <img src="./static/img/categories__img-two.png" alt="" class="slider__img">
+                                    <img src="/static/img/categories__img-two.png" alt="" class="slider__img">
                                     <h3 class="slider__card-title">Sports</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider__card">
-                                    <img src="./static/img/categories__img-three.png" alt="" class="slider__img">
+                                    <img src="/static/img/categories__img-three.png" alt="" class="slider__img">
                                     <h3 class="slider__card-title">Metaverse</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider__card">
-                                    <img src="./static/img/categories__img-one.png" alt="" class="slider__img">
+                                    <img src="/static/img/categories__img-one.png" alt="" class="slider__img">
                                     <h3 class="slider__card-title">Games</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider__card">
-                                    <img src="./static/img/categories__img-two.png" alt="" class="slider__img">
+                                    <img src="/static/img/categories__img-two.png" alt="" class="slider__img">
                                     <h3 class="slider__card-title">Sports</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider__card">
-                                    <img src="./static/img/categories__img-three.png" alt="" class="slider__img">
+                                    <img src="/static/img/categories__img-three.png" alt="" class="slider__img">
                                     <h3 class="slider__card-title">Metaverse</h3>
                                 </div>
                             </div>
@@ -144,21 +145,16 @@
                 <div class="collections__content">
                     <div class="collections__top">
                         <h2 class="collections-title">top collections</h2>
-                        <div class="collections__checkbox">
-                            <label class="checkbox__btn active" for="radio1">
-                                <input type="radio" style="display: none;" class="checkbox__btn" name="radio__btn"
-                                    id="radio1" checked>
-                                7 Days</label>
-
-                            <label class="checkbox__btn" for="radio2">
-                                <input type="radio" style="display: none;" class="checkbox__btn" name="radio__btn"
-                                    id="radio2">
-                                30 Days</label>
+                        <div class="filter-group">
+                            <input type="radio" class="filter-group__input" name="collectionsFilter" value="week" id="radio1" checked>
+                            <label class="filter-group__btn" for="radio1">7 Days</label>
+                            <input type="radio" class="filter-group__input" name="collectionsFilter" value="month" id="radio2">
+                            <label class="filter-group__btn" for="radio2">30 Days</label>
                         </div>
                     </div>
                     <div class="collections__list">
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-four.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-four.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Super Worlds</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.70ETH</h4>
@@ -171,7 +167,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-three.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-three.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Kive Core</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.06ETH</h4>
@@ -184,7 +180,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-five.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-five.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">NFT Flow</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.50ETH</h4>
@@ -197,7 +193,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-four.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-four.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Super Worlds</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.70ETH</h4>
@@ -210,7 +206,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-three.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-three.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Kive Core</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.06ETH</h4>
@@ -223,7 +219,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-five.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-five.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">NFT Flow</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.50ETH</h4>
@@ -236,7 +232,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-two.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-two.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Bidether</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.10ETH</h4>
@@ -249,7 +245,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-four.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-four.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Varipack</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.90ETH</h4>
@@ -262,7 +258,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-three.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-three.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Nether</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.08ETH</h4>
@@ -275,7 +271,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-five.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-five.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Moonther</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.10ETH</h4>
@@ -288,7 +284,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-six.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-six.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Proof Corn</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor: 0.90ETH</h4>
@@ -301,7 +297,7 @@
                             </div>
                         </div>
                         <div class="collections__item">
-                            <img src="./static/img/collection__img-one.png" alt="img" class="item__img">
+                            <img src="/static/img/collection__img-one.png" alt="img" class="item__img">
                             <div class="item__titles">
                                 <h3 class="item__titles-title">Parallel</h3>
                                 <h4 class="item__titles-price color--lightblue">Floor:0.08ETH</h4>
@@ -327,7 +323,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="tranding-slide">
-                                    <img src="./static/img/tranding-one.png" alt="img" class="tranding-slide-img">
+                                    <img src="/static/img/tranding-one.png" alt="img" class="tranding-slide-img">
                                     <h3 class="tranding-slide-title">Rare Crypto</h3>
                                     <p class="h4 tranding-slide-descriprion">#QA5200 The Kive</p>
                                     <div class="tranding-slide-price">
@@ -344,7 +340,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="tranding-slide">
-                                    <img src="./static/img/tranding-two.png" alt="img" class="tranding-slide-img">
+                                    <img src="/static/img/tranding-two.png" alt="img" class="tranding-slide-img">
                                     <h3 class="tranding-slide-title">Kive Boy</h3>
                                     <p class="h4 tranding-slide-descriprion">#QA5200 The Kive</p>
                                     <div class="tranding-slide-price">
@@ -361,7 +357,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="tranding-slide">
-                                    <img src="./static/img/tranding-three.png" alt="img" class="tranding-slide-img">
+                                    <img src="/static/img/tranding-three.png" alt="img" class="tranding-slide-img">
                                     <h3 class="tranding-slide-title">Rare Crypto</h3>
                                     <p class="h4 tranding-slide-descriprion">#QA5200 The Kive</p>
                                     <div class="tranding-slide-price">
@@ -378,7 +374,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="tranding-slide">
-                                    <img src="./static/img/tranding-four.png" alt="img" class="tranding-slide-img">
+                                    <img src="/static/img/tranding-four.png" alt="img" class="tranding-slide-img">
                                     <h3 class="tranding-slide-title">kive Boy</h3>
                                     <p class="h4 tranding-slide-descriprion">#QA5200 The Kive</p>
                                     <div class="tranding-slide-price">
@@ -395,7 +391,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="tranding-slide">
-                                <img src="./static/img/tranding-one.png" alt="img" class="tranding-slide-img">
+                                <img src="/static/img/tranding-one.png" alt="img" class="tranding-slide-img">
                                 <h3 class="tranding-slide-title">Rare Crypto</h3>
                                 <p class="h4 tranding-slide-descriprion">#QA5200 The Kive</p>
                                 <div class="tranding-slide-price">
@@ -412,7 +408,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="tranding-slide">
-                                    <img src="./static/img/tranding-two.png" alt="img" class="tranding-slide-img">
+                                    <img src="/static/img/tranding-two.png" alt="img" class="tranding-slide-img">
                                     <h3 class="tranding-slide-title">Kive Boy</h3>
                                     <p class="h4 tranding-slide-descriprion">#QA5200 The Kive</p>
                                     <div class="tranding-slide-price">
@@ -442,7 +438,7 @@
                     <h2 class="insights-title">insights</h2>
                     <div class="insights__list">
                         <div class="insights__item">
-                            <img src="./static/img/insights__img-one.png" alt="img" class="insights__img">
+                            <img src="/static/img/insights__img-one.png" alt="img" class="insights__img">
                             <div class="insights__date-item">
                                 <p class="insights-theme">technology</p>
                                 <p class="h4 insights-date">John Doe • 19 Jan 2022</p>
@@ -454,7 +450,7 @@
                             </div>
                         </div>
                         <div class="insights__item">
-                            <img src="./static/img/insights__img-two.png" alt="img" class="insights__img">
+                            <img src="/static/img/insights__img-two.png" alt="img" class="insights__img">
                             <div class="insights__date-item">
                                 <p class="insights-theme">Webiner</p>
                                 <p class="h4 insights-date">John Doe • 19 Jan 2022</p>
@@ -467,7 +463,7 @@
                             </div>
                         </div>
                         <div class="insights__item">
-                            <img src="./static/img/insights__img-three.png" alt="img" class="insights__img">
+                            <img src="/static/img/insights__img-three.png" alt="img" class="insights__img">
                             <div class="insights__date-item">
                                 <p class="insights-theme">Crypto Currency</p>
                                 <p class="h4 insights-date">John Doe • 19 Jan 2022</p>
@@ -507,7 +503,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__top">
-                <img src="./static/icon/Logo.svg" alt="logo" class="footer__logo">
+                <img src="/static/icon/Logo.svg" alt="logo" class="footer__logo">
                 <div class="footer__group">
                     <div class="footer__group__item">
                         <p class="footer__group-title">Quick Links</p>
